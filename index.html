@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Ultra // Intelligence Terminal</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="terminal">
+        <header>
+            <h1>[ PROJECT ULTRA // INTELLIGENCE TERMINAL ]</h1>
+            <p>STATUS: <span id="status-light" class="offline"></span> <span id="status-text">OFFLINE</span></p>
+        </header>
+
+        <div id="chat-output">
+            <p class="system-message">[System booting...]</p>
+            <p class="system-message">[Awaiting 'Ultra' Engine handshake...]</p>
+        </div>
+
+        <div id="input-area">
+            <label for="adapter-select" class="classified-label">[ ADAPTER ]:</label>
+            <select id="adapter-select" disabled>
+                <option value="default">[ DEFAULT ]</option>
+                <option value="hut-8">[ HUT-8 (NAVAL) ]</option>
+                <option value="hut-6">[ HUT-6 (DIPLOMATIC) ]</option>
+            </select>
+
+            <input type="text" id="prompt-input" placeholder="[ TRANSMIT MESSAGE... ]" disabled>
+            <button id="send-button" disabled>[ SEND ]</button>
+        </div>
+    </div>
+
+    <script src="app.js" type="module"></script>
+</body>
+</html>
